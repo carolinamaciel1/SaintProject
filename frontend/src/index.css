@@ -3,3 +3,10 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+div{
+    padding: 25px;
+    background-color: aliceblue;
+    font-family: monospace;
+}
+
