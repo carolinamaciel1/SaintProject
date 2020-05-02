@@ -6,6 +6,7 @@ from django.utils import timezone
 
 
 class Saints(models.Model):
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255, blank=True)
     country = models.CharField(max_length=255, blank=True)
     description = models.TextField(blank=True)

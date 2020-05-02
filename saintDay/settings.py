@@ -37,14 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'saints'
+    'saints',
+    'rest_framework',
 ]
 
-REST_FRAMEWORK = {  # added
+REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny'
-    ],
-    'DATETIME_FORMAT': "%m/%d/%Y %H:%M:%S",
+        'rest_framework.permissions.AllowAny',
+    ]
 }
 
 MIDDLEWARE = [

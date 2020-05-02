@@ -1,6 +1,11 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 from django.shortcuts import render
+from rest_framework import generics
+from .models import Saints
+from .serializers import SaintsSerializer
 
-# Create your views here.
+
+class ListSaintsView(generics.ListAPIView):
+    queryset = Saints.objects.all()
+    serializer_class = SaintsSerializer
+
+
